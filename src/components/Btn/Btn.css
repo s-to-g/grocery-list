@@ -1,0 +1,11 @@
+/* Colors */
+.Btn {
+  background-color: #7647a2;
+  border: none;
+  color: #FFFFFF;
+  height: 4em;
+  width: 6em; }
+
+.Btn--outline {
+  border: 1px solid #7647a2;
+  background-color: transparent; }

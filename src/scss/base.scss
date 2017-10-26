@@ -1,0 +1,32 @@
+@import 'node_modules/reset-css/_reset.scss';
+@import 'vars.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', arial;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $secondary;
+  color: $white;
+  height: 100vh;
+}
+
+h3 {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,14 @@
+@import "../../scss/vars.scss";
+
+.Input {
+  background-color: $grey-darker;
+  color: $white;
+  border: 0;
+  height: 4em;
+  padding: 8px;
+  width: 20em;
+  margin-right: 1em;
+  &::placeholder {
+    color: $white;
+  }
+}

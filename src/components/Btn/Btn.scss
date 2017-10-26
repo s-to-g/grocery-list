@@ -1,0 +1,13 @@
+@import '../../scss/vars.scss';
+.Btn {
+  background-color: $primary;
+  border: none;
+  color: $white;
+  height: 4em;
+  width: 6em;
+}
+
+.Btn--outline {
+  border: 1px solid $primary;
+  background-color: transparent;
+}

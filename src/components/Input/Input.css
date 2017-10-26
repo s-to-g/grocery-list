@@ -1,0 +1,11 @@
+/* Colors */
+.Input {
+  background-color: #151619;
+  color: #FFFFFF;
+  border: 0;
+  height: 4em;
+  padding: 8px;
+  width: 20em;
+  margin-right: 1em; }
+  .Input::placeholder {
+    color: #FFFFFF; }

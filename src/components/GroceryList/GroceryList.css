@@ -1,0 +1,9 @@
+.GroceryList {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+
+.GroceryList-item--done .GroceryList-itemTitle {
+  opacity: 0.3;
+  text-decoration: line-through; }

@@ -1,0 +1,63 @@
+@import '../../scss/vars.scss';
+
+.Users {
+  flex-basis: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.Users-list {
+  border: 1px solid $primary;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Users-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 40px 20px;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $primary;
+  }
+}
+
+.Users-groceries {
+  flex-basis: 100%;
+}
+
+.Users-groceriesItem {
+  padding: 16px;
+  position: relative;
+  &:after {
+    background-color: $primary;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+}
+
+.Users-name {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: auto;
+}
+
+.Users-count {
+  background-color: $primary;
+  border-radius: 50%;
+  padding: 8px 12px;
+  margin-left: 8px;
+}
+
+.Users-actions {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
