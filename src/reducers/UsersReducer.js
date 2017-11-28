@@ -13,6 +13,7 @@ export default function users(state = getStoredUsers(), action) {
         } else if (user.id === action.payload) {
           user.loggedIn = true;
         }
+        return user;
       })
       return state.concat();
     default: return state;

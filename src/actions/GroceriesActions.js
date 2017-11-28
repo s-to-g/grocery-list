@@ -39,6 +39,7 @@ export function MarkGroceryAsDoneAction(id) {
       if (item.id === id) {
         item.status = "done"
       }
+      return item;
     })
     localStorage.setItem('gl_items', JSON.stringify(items));
     dispatch({
@@ -54,6 +55,7 @@ export function MarkGroceryAsUnDoneAction(id) {
       if (item.id === id) {
         item.status = "active"
       }
+      return item;
     })
     localStorage.setItem('gl_items', JSON.stringify(items));
     dispatch({

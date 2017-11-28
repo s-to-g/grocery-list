@@ -5,7 +5,7 @@ const Btn = props => {
 
   const {text, componentClass, onClickAction} = props;
   let classes = ['Btn'];
-  componentClass ? classes.push(componentClass) : null;
+  componentClass && classes.push(componentClass);
 
   return (
     <button className={classes.join(' ')} onClick={onClickAction} type="submit">{text}</button>

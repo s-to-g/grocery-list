@@ -53,7 +53,7 @@ class Users extends React.Component {
                 groceries.map((item) => {
                   if (item.userId === user.id) {
                     let componentClasses = ['Users-groceriesItem'];
-                    item.status === "done" ? componentClasses.push('GroceryList-item--done') : null;
+                    item.status === "done" && componentClasses.push('GroceryList-item--done');
                     return (
                       <li className={componentClasses.join(" ")} key={item.id}>
                         <span className="GroceryList-itemTitle">{item.name}</span>
@@ -65,6 +65,8 @@ class Users extends React.Component {
                           }
                       </li>
                     )
+                  } else {
+                    return null;
                   }
                 })
               }

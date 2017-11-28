@@ -31,7 +31,7 @@ class GroceryList extends React.Component {
   }
 
   render() {
-    const {users, groceries} = this.props;
+    const {users} = this.props;
     const {inputValue} = this.state;
     return (
       <section className="GroceryList">
@@ -49,6 +49,8 @@ class GroceryList extends React.Component {
                </form>
              </div>
            )
+         } else {
+          return null;
          }
         })
       }

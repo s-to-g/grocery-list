@@ -11,6 +11,7 @@ export default function groceries(state = getStoredGroceries(), action) {
         if (item.id === action.payload) {
           item.status = "done";
         }
+        return item;
       })
       return state.concat();
     case "MARK_GROCERY_AS_UNDONE":
@@ -18,6 +19,7 @@ export default function groceries(state = getStoredGroceries(), action) {
         if (item.id === action.payload) {
           item.status = "active";
         }
+        return item;
       })
       return state.concat();
     default: return state;

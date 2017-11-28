@@ -1,7 +1,3 @@
-// import firebase from '../firebase';
-//
-// const usersRef = firebase.database().ref('/users');
-
 import {getStoredUsers} from '../util.js';
 
 export function AddUserAction(userName, firstUser) {

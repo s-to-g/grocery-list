@@ -4,6 +4,9 @@
   justify-content: center;
   padding: 20px; }
 
+.GroceryList-itemTitle {
+  margin-right: 8px; }
+
 .GroceryList-item--done .GroceryList-itemTitle {
   opacity: 0.3;
   text-decoration: line-through; }
